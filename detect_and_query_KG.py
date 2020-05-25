@@ -1,6 +1,7 @@
 '''
 Bachelor Project Information Sciences Knowledge Graph in RDFLib
-This file contains the knowledge graph of an autonomous plastic identification and removal beach robot.
+This file contains the object detection programme YOLO connected to the Knowledge Graph of the autonomous robot to infer the actions
+that need to be taken.
 '''
 
 # Import the right libraries
