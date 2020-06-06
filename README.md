@@ -15,15 +15,15 @@ This paper examines the extent to which Artificial Intelligence supports the dev
 The path planning algorithm is not coded. The research found that a simple area coverage path planning algorithm will do the job. Therefore, we have not implemented it. The Simple_path.png can be used as a reference of how the Path Planning should look like.
 
 ### Object Detection
-YOLO object detection from Pjreddie is used. 
-- https://github.com/pjreddie/darknet
-- https://pjreddie.com/darknet/yolo/
+YOLO object detection from Pjreddie is used.
+- https://pjreddie.com/darknet/yolo/ (How to install the files)
+- https://github.com/pjreddie/darknet (The files)
 
 To get YOLO working, follow the above links and install the files.
 
 ### Knowledge Graph
 The create_knowledgegraph.py file in this repository contains the Knowledge Graph of the autonomous robot.
-It saves the knowledge graph in the knowledgegraph.ttl file.
+It saves the Knowledge Graph in the knowledgegraph.ttl file.
 
 ### Get everything together
 The detect_and_query_KG.py file in this repository contains the object detection combined with the knowledge graph to infer action.
