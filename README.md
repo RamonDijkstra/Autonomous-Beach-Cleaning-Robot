@@ -22,16 +22,18 @@ YOLO object detection from Pjreddie is used.
 To get YOLO working, follow the above links and install the files.
 
 ### Knowledge Graph
-The create_knowledgegraph.py file in this repository contains the Knowledge Graph of the autonomous robot.
-It saves the Knowledge Graph in the knowledgegraph.ttl file.
+The create_knowledgegraph.py file in this repository contains the knowledge graph of the autonomous robot.
+It saves the Knowledge Graph in the knowledgegraph.ttl file. A visualisation of this knowledge graph can be found in the visualisation_knowledge_graph.png file.
 
 ### Get everything together
-The detect_and_query_KG.py file in this repository contains the object detection combined with the knowledge graph to infer action.
+The detect_and_query_KG.py file in this repository contains the object detection combined with the knowledge graph to infer the actions that need to be taken by the robot.
 
 How to get it working:
 - Install YOLO
 - Run the create_knowledgegraph.py file
-- Choose a image to detect
+- Choose an image to detect
 - Run the detect_and_query_KG.py file
 
 The output contains the actions that need to be taken by the robot.
+
+The visualisation_scenario_full_system.png file contains a visualisation of the whole system.
