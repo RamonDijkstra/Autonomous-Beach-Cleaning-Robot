@@ -12,7 +12,7 @@ This paper examines the extent to which Artificial Intelligence supports the dev
 ## How it works
 
 ### Path Planning
-The path planning algorithm is not coded. The research found that a simple area coverage path planning algorithm will do the job. Therefore, we have not implemented it. The Simple_path.png can be used as a reference of how the Path Planning should look like.
+The path planning algorithm is not coded. The research found that a simple area coverage path planning algorithm will do the job. Therefore, we have not implemented it. The visualisation_simple_path_planning.png can be used as a reference of how the Path Planning should look like.
 
 ### Object Detection
 YOLO object detection from Pjreddie is used.
