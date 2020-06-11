@@ -2,6 +2,8 @@
 Bachelor Project Information Sciences
 This file contains the detection of objects with YOLO and a queried knowledge graph to infer actions that
 are given to the mechanical side of an autonomous robot that detects and removes plastic on beaches.
+
+Author: Ramon Dijkstra
 '''
 
 # Import the right libraries
