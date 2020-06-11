@@ -4,6 +4,8 @@ This github repository contains the files and the results of a bachelor's thesis
 
 The AI techniques that are used are path planning, object detection and a knowledge graph.
 
+Author: Ramon Dijkstra
+
 ## The abstract of the research
 The abstract of the bachelor thesis is added below. This abstract is added so that the goal of the project is getting more clear.
 
