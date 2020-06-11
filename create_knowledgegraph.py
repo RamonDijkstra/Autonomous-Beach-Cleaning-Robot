@@ -1,6 +1,8 @@
 '''
 Bachelor Project Information Sciences - Knowledge Graph in RDFLib
 This file contains the knowledge graph of an autonomous robot that detects and removes plastic on beaches.
+
+Author: Ramon Dijkstra
 '''
 
 # Import the right libraries
