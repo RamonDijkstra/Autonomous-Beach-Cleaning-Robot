@@ -1,8 +1,6 @@
 '''
 Bachelor Project Information Sciences - Knowledge Graph in RDFLib
 This file contains the knowledge graph of an autonomous robot that detects and removes plastic on beaches.
-
-Author: Ramon Dijkstra
 '''
 
 # Import the right libraries
@@ -65,21 +63,21 @@ def inference():
 g.add((EX.dynamic_object, RDFS.subClassOf, EX.object))
 g.add((EX.static_object, RDFS.subClassOf, EX.object))
 
-g.add((EX.person, RDFS.subClassOf, EX.dynamic_object))
-g.add((EX.animal, RDFS.subClassOf, EX.dynamic_object))
-g.add((EX.car, RDFS.subClassOf, EX.dynamic_object))
-g.add((EX.ball, RDFS.subClassOf, EX.dynamic_object))
+g.add((EX.person, RDF.type, EX.dynamic_object))
+g.add((EX.animal, RDF.type, EX.dynamic_object))
+g.add((EX.car, RDF.type, EX.dynamic_object))
+g.add((EX.ball, RDF.type, EX.dynamic_object))
 
 g.add((EX.plastic_object, RDFS.subClassOf, EX.static_object))
-g.add((EX.pole, RDFS.subClassOf, EX.static_object))
-g.add((EX.towel, RDFS.subClassOf, EX.static_object))
-g.add((EX.windscreen, RDFS.subClassOf, EX.static_object))
-g.add((EX.chair, RDFS.subClassOf, EX.static_object))
-g.add((EX.sunbed, RDFS.subClassOf, EX.static_object))
-g.add((EX.tree, RDFS.subClassOf, EX.static_object))
-g.add((EX.boat, RDFS.subClassOf, EX.static_object))
-g.add((EX.inflatables, RDFS.subClassOf, EX.static_object))
-g.add((EX.umbrella, RDFS.subClassOf, EX.static_object))
+g.add((EX.pole, RDF.type, EX.static_object))
+g.add((EX.towel, RDF.type, EX.static_object))
+g.add((EX.windscreen, RDF.type, EX.static_object))
+g.add((EX.chair, RDF.type, EX.static_object))
+g.add((EX.sunbed, RDF.type, EX.static_object))
+g.add((EX.tree, RDF.type, EX.static_object))
+g.add((EX.boat, RDF.type, EX.static_object))
+g.add((EX.inflatables, RDF.type, EX.static_object))
+g.add((EX.umbrella, RDF.type, EX.static_object))
 
 # Add the general properties of the main tuples
 
@@ -100,13 +98,13 @@ g.add((EX.car, EX.has_property, EX.can_move))
 # Ball
 g.add((EX.ball, EX.has_property, EX.dynamic))
 g.add((EX.ball, EX.has_property, EX.can_move))
-g.add((EX.ball, RDFS.subClassOf, EX.plastic_object))
+g.add((EX.ball, RDF.type, EX.plastic_object))
 
 # Plastic
-g.add((EX.bottle, RDFS.subClassOf, EX.plastic_object))
+g.add((EX.bottle, RDF.type, EX.plastic_object))
 g.add((EX.bottle, EX.has_weight, EX.low))
-g.add((EX.plastic_sack, RDFS.subClassOf, EX.plastic_object))
-g.add((EX.plastic_bag, RDFS.subClassOf, EX.plastic_object))
+g.add((EX.plastic_sack, RDF.type, EX.plastic_object))
+g.add((EX.plastic_bag, RDF.type, EX.plastic_object))
 
 # Towel
 g.add((EX.towel, EX.has_position, EX.on_the_ground))
@@ -127,7 +125,7 @@ g.add((EX.tree, EX.has_property, EX.leaves))
 g.add((EX.boat, EX.has_position, EX.on_the_ground))
 
 # Inflatables
-g.add((EX.inflatables, RDFS.subClassOf, EX.plastic_object))
+g.add((EX.inflatables, RDF.type, EX.plastic_object))
 g.add((EX.inflatables, EX.contains, EX.air))
 
 # Umbrella
@@ -186,7 +184,7 @@ g.add((EX.plastic_bag, EX.pick_up_ability, EX.one_arm))
 
 
 # Information about the robot itself
-g.add((EX.robot, RDFS.subClassOf, EX.object))
+g.add((EX.robot, RDF.type, EX.object))
 g.add((EX.robot, geo.lat, Literal("-8.659589")))
 g.add((EX.robot, geo.long, Literal("115.130358")))
 g.add((EX.robot, EX.bin_location, Literal("-8.659522, 115.130313")))
