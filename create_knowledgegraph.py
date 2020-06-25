@@ -101,10 +101,13 @@ g.add((EX.ball, EX.has_property, EX.can_move))
 g.add((EX.ball, RDF.type, EX.plastic_object))
 
 # Plastic
+g.add((EX.bottle, RDF.type, EX.static_object))
 g.add((EX.bottle, RDF.type, EX.plastic_object))
 g.add((EX.bottle, EX.has_weight, EX.low))
 g.add((EX.plastic_sack, RDF.type, EX.plastic_object))
+g.add((EX.plastic_sack, RDF.type, EX.static_object))
 g.add((EX.plastic_bag, RDF.type, EX.plastic_object))
+g.add((EX.plastic_bag, RDF.type, EX.static_object))
 
 # Towel
 g.add((EX.towel, EX.has_position, EX.on_the_ground))
@@ -126,6 +129,7 @@ g.add((EX.boat, EX.has_position, EX.on_the_ground))
 
 # Inflatables
 g.add((EX.inflatables, RDF.type, EX.plastic_object))
+g.add((EX.inflatables, RDF.type, EX.static_object))
 g.add((EX.inflatables, EX.contains, EX.air))
 
 # Umbrella
@@ -184,7 +188,7 @@ g.add((EX.plastic_bag, EX.pick_up_ability, EX.one_arm))
 
 
 # Information about the robot itself
-g.add((EX.robot, RDF.type, EX.object))
+g.add((EX.robot, RDF.type, EX.dynamic_object))
 g.add((EX.robot, geo.lat, Literal("-8.659589")))
 g.add((EX.robot, geo.long, Literal("115.130358")))
 g.add((EX.robot, EX.bin_location, Literal("-8.659522, 115.130313")))
