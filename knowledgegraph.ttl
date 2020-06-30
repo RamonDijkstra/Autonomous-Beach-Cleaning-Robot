@@ -1,0 +1,116 @@
+@prefix ex: <http://example.com/bachelor_project/> .
+@prefix geo: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+ex:animal a ex:dynamic_object,
+        ex:object ;
+    ex:action_required ex:move_around ;
+    ex:has_property ex:can_move,
+        ex:can_walk,
+        ex:dynamic .
+
+ex:ball a ex:dynamic_object,
+        ex:object,
+        ex:plastic_object,
+        ex:static_object ;
+    ex:action_required ex:move_around ;
+    ex:has_property ex:can_move,
+        ex:dynamic .
+
+ex:boat a ex:object,
+        ex:static_object ;
+    ex:action_required ex:move_around ;
+    ex:has_position ex:on_the_ground .
+
+ex:bottle a ex:dynamic_object,
+        ex:object,
+        ex:plastic_object,
+        ex:static_object ;
+    ex:action_required ex:pick_up ;
+    ex:has_weight ex:low ;
+    ex:pick_up_ability ex:one_arm .
+
+ex:car a ex:dynamic_object,
+        ex:object ;
+    ex:action_required ex:move_around ;
+    ex:has_property ex:can_move,
+        ex:dynamic .
+
+ex:chair a ex:object,
+        ex:static_object ;
+    ex:action_required ex:move_around ;
+    ex:has_position ex:on_the_ground .
+
+ex:inflatables a ex:dynamic_object,
+        ex:object,
+        ex:plastic_object,
+        ex:static_object ;
+    ex:action_required ex:move_around ;
+    ex:contains ex:air .
+
+ex:person a ex:dynamic_object,
+        ex:object ;
+    ex:action_required ex:move_around ;
+    ex:has_property ex:can_move,
+        ex:can_walk,
+        ex:dynamic .
+
+ex:plastic_bag a ex:dynamic_object,
+        ex:object,
+        ex:plastic_object,
+        ex:static_object ;
+    ex:action_required ex:pick_up ;
+    ex:pick_up_ability ex:one_arm .
+
+ex:plastic_sack a ex:dynamic_object,
+        ex:object,
+        ex:plastic_object,
+        ex:static_object ;
+    ex:action_required ex:pick_up ;
+    ex:pick_up_ability ex:two_arms .
+
+ex:pole a ex:object,
+        ex:static_object .
+
+ex:robot a ex:dynamic_object,
+        ex:object ;
+    ex:bin_location "-8.659522, 115.130313" ;
+    ex:saved_location "-8.659655, 115.130383" ;
+    ex:temporary_bin_full ex:false ;
+    geo:lat "-8.659589" ;
+    geo:long "115.130358" .
+
+ex:sunbed a ex:object,
+        ex:static_object .
+
+ex:towel a ex:object,
+        ex:static_object ;
+    ex:action_required ex:move_around ;
+    ex:has_position ex:on_the_ground .
+
+ex:tree a ex:object,
+        ex:static_object ;
+    ex:action_required ex:move_around ;
+    ex:has_property ex:leaves .
+
+ex:umbrella a ex:object,
+        ex:static_object ;
+    ex:action_required ex:move_around ;
+    ex:has_position ex:on_the_ground .
+
+ex:windscreen a ex:object,
+        ex:static_object ;
+    ex:action_required ex:move_around ;
+    ex:has_position ex:on_the_ground .
+
+ex:plastic_object rdfs:subClassOf ex:dynamic_object,
+        ex:object,
+        ex:static_object .
+
+ex:dynamic_object rdfs:subClassOf ex:object .
+
+ex:static_object rdfs:subClassOf ex:object .
+
