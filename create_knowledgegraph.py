@@ -100,7 +100,7 @@ g.add((EX.car, EX.has_property, EX.can_move))
 g.add((EX.ball, EX.has_property, EX.dynamic))
 g.add((EX.ball, EX.has_property, EX.can_move))
 g.add((EX.ball, RDF.type, EX.plastic_object))
-g.add((EX.ball, RDF.type, EX.object))
+g.add((EX.ball, RDF.type, EX.dynamic_object))
 
 # Plastic
 g.add((EX.bottle, RDF.type, EX.static_object))
