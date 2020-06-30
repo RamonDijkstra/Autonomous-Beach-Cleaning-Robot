@@ -69,6 +69,7 @@ g.add((EX.car, RDF.type, EX.dynamic_object))
 g.add((EX.ball, RDF.type, EX.dynamic_object))
 
 g.add((EX.plastic_object, RDFS.subClassOf, EX.static_object))
+g.add((EX.plastic_object, RDFS.subClassOf, EX.dynamic_object))
 g.add((EX.pole, RDF.type, EX.static_object))
 g.add((EX.towel, RDF.type, EX.static_object))
 g.add((EX.windscreen, RDF.type, EX.static_object))
@@ -99,6 +100,7 @@ g.add((EX.car, EX.has_property, EX.can_move))
 g.add((EX.ball, EX.has_property, EX.dynamic))
 g.add((EX.ball, EX.has_property, EX.can_move))
 g.add((EX.ball, RDF.type, EX.plastic_object))
+g.add((EX.ball, RDF.type, EX.object))
 
 # Plastic
 g.add((EX.bottle, RDF.type, EX.static_object))
