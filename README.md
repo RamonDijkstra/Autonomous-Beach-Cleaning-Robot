@@ -28,7 +28,7 @@ The create_knowledgegraph.py file in this repository contains the knowledge grap
 It saves the Knowledge Graph in the knowledgegraph.ttl file. A visualisation of this knowledge graph can be found in the visualisation_knowledge_graph.png file. A visualisation of the class hierarchy of the knowledge graph can be found in the visualisation_class_hierarchy.png file.
 
 ### Get everything together
-The detect_and_query_KG.py file in this repository contains the object detection combined with the knowledge graph to infer the actions that need to be taken by the robot.
+The visualisation_workflow.png file shows how all the AI technologies work together. The detect_and_query_KG.py file in this repository contains the object detection combined with the knowledge graph to infer the actions that need to be taken by the robot.
 
 How to get it working:
 - Install YOLO
