@@ -38,4 +38,4 @@ How to get it working:
 
 The output contains the actions that need to be taken by the robot.
 
-The visualisation_scenario_full_system.png file contains a visualisation of the whole system.
+The visualisation_scenario_full_system.png file contains a visualisation of the whole system. The queries_real_life_scenario.py file contains the corresponding queries of the real life scenario.
